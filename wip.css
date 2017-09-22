@@ -118,31 +118,6 @@
   line-height: 1em;
 }
 
-.sheet-main-div .sheet-fancy-checkbox {
-  opacity: 0;
-  width: 16px;
-  height: 15px;
-  margin-right: -16px !important;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.sheet-main-div .sheet-fancy-checkbox + span::before {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 15px;
-  width: 16px;
-  height: 15px;
-  background: url('https://i.imgur.com/5tnFvnK.png') 0 0 no-repeat;
-  background-size: cover;
-  content: '';
-}
-
-.sheet-main-div .sheet-fancy-checkbox:checked + span::before {
-  background: url('https://i.imgur.com/tYrkuxx.png') 0 0 no-repeat;
-  background-size: cover;
-}
-
 .sheet-main-div .sheet-input-full {
   width: 100%;
   margin-bottom: .5em;
@@ -197,34 +172,6 @@
 /*-----------------*
  * Character Sheet *
  *-----------------*/
-.sheet-advances-wrapper input[type="checkbox"],
-.sheet-stress-wrapper input[type="checkbox"] {
-  opacity: 0;
-  width: 32px;
-  height: 30px;
-  margin-right: -32px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.sheet-advances-wrapper input[type="checkbox"] + span::before,
-.sheet-stress-wrapper input[type="checkbox"] + span::before {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 30px;
-
-  width: 32px;
-  height: 30px;
-  background: url('https://i.imgur.com/5tnFvnK.png') 0 0 no-repeat;
-
-  content: '';
-}
-
-.sheet-advances-wrapper input[type="checkbox"]:checked + span::before,
-.sheet-stress-wrapper input[type="checkbox"]:checked + span::before {
-  background: url('https://i.imgur.com/tYrkuxx.png') 0 0 no-repeat;
-}
-
 .sheet-attr-wrapper {
   width: 100%;
   margin-bottom: .5em;
