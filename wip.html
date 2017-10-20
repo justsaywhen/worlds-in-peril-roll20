@@ -59,6 +59,11 @@
                     <button type="roll" name="roll_sma"
                             value="&{template:wip} {{name=@{character_name}}} {{roll_name=Smash}} {{roll_mod=@{sma}}} {{result=[[2d6 + @{sma}]]}}"></button>
                 </div>
+                <div class="sheet-attr-box">
+                    <label class="sheet-push sheet-label-bold">Push</label>
+                    <button type="roll" name="roll_psh"
+                            value="&{template:wip} {{name=@{character_name}}} {{roll_name=Push}} {{roll_mod=0}} {{result=[[2d6]]}}"></button>
+                </div>
             </div>
         </div>
     </div>
@@ -139,7 +144,9 @@
                     <div class="repeated-item-wrapper">
                         <label class="sheet-label-bold">Name & Bond Value</label>
                         <input type="text" name="attr_bond_name" />
-                        <input type="number" name="attr_bond_number" value="1" />
+                        <input type="number" name="attr_bond_number" value="0" />
+                        <button type="roll" name="roll_bond"
+                                value="&{template:wip} {{name=@{character_name}}} {{roll_name=Bond with @{bond_name}}} {{roll_mod=@{bond_number}}} {{result=[[2d6 + @{bond_number}]]}}"></button>
                         <label class="sheet-label-bold">Description</label>
                         <input type="text" class="sheet-input-full" name="attr_bond_desc" />
                     </div>
